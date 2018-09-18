@@ -1,0 +1,124 @@
+.app {
+    /* 27G */
+    display: flex;
+    /* 27F */
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    min-height: 800px;
+    min-width: 655px;
+  }
+  
+  .nav {
+    background-color: #ab2a19;
+    width: 100%;
+    /* 23E */
+    height: 100px;
+    display: flex;
+    /* 27C */
+    justify-content: center;
+    /* 27D */
+    align-items: center;
+  }
+
+  .image {
+    width: 50px;
+    position: relative;
+    top: 13px;
+    margin-right: 10px;
+  }
+
+  .shelf-image {
+    width: 65px;
+  }
+
+  .nav-contents {
+    width: auto;
+    height: auto;
+    /* 25C */
+    position: relative;
+    left: -165px;
+    display: block;
+  }
+
+  .nav-shelf {
+    font-weight: 700;
+    font-family: Open Sans, sans-serif;
+    background-color: #d34735;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    min-width: 681px;
+  }
+
+  .logo-holder {
+    background-color: #ab2a19;
+    display: flex;
+    align-items: center;
+    width: 15%;
+    height: 100%;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .shelf-title-box {
+    display: flex;
+    align-items: center;
+  }
+
+  .shelf-title {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: Open Sans, sans-serif;
+    width: 100%;
+  }
+
+  .shelfie {
+    font-size: 30px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 700;
+    color: white;
+  }
+  
+  .shelves {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px
+  }
+
+  /* .shelf {
+    background-color: #d34735;
+    font-family: Open Sans, sans-serif;
+    font-weight: 700;
+    color: white;
+    width: 500px;
+    height: 60px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+  
+  } */
+
+  .shelf-bin-box {
+      background-color: #ffb8af;
+      color:black;
+      width: 100%;
+      display: flex;
+      justify-content: left;
+  }
+
+  .shelf-bin-title {
+      font-size: 50px;
+      margin-top: 21px;
+      margin-left: 25px;
+  }
+  
+  /* a {
+    text-decoration: none;
+  } */
+  

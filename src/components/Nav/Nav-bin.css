@@ -1,0 +1,48 @@
+.logo-box {
+    background-color: #ab2a19;
+    display: flex;
+    align-items: center;
+    width: 10%; 
+    height: 100%;
+    min-width: 120px;
+    justify-content: center;
+}
+
+.shelf-image {
+    width: 50px;
+}
+
+.shelf-title-box {
+    font-weight: 700;
+    font-family: Open Sans, sans-serif;
+    background-color: #d34735;
+    color: white;
+    width: 20%;
+    font-size: 30px;
+    min-width: 146px;
+    display: flex;
+    align-items: center;
+    
+
+    
+}
+
+.shelf-title {
+    font-weight: 700;
+    font-family: Open Sans,sans-serif;
+    font-size: 30px;
+}
+
+.shelf-bin-box {
+    font-weight: 700;
+    font-family: Open Sans, sans-serif;
+    background-color: #ed6b5a;
+    color: white;
+    height: 100%;
+    display: flex;
+    width: 70%;
+    align-items: center;
+    font-size: 30px;
+    
+
+}
