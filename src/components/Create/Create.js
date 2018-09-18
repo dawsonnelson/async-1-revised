@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import NavCreate from '../Nav/Nav-create'
+import './Create.css'
 
 
 export default class CreateItem extends Component {
@@ -21,9 +22,9 @@ export default class CreateItem extends Component {
                 </div>
                 <div className = 'container'>
                     <span className = 'container-title'> Name </span>
-                    {/* <input className = 'input-box' onChange = {(e)=>this.handleNameInput(e.target.value)}/> */}
+                    <input className = 'input-box' onChange = {(e)=>this.handleNameInput(e.target.value)}/>
                     <span className = 'container-title' value = '$'> Price </span>
-                    {/* <input className = 'input-box' onChange = {(e)=> this.handlePriceInput(e.target.value)}/> */}
+                    <input className = 'input-box' onChange = {(e)=> this.handlePriceInput(e.target.value)}/>
                     <button className = 'add-in-button' onClick = {()=> this.handleAddNameInput()}> + Add to Inventory </button>
                 </div>
             </div>
