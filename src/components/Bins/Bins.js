@@ -17,19 +17,19 @@ export default class Bins extends Component {
         }
     }
 
-    // componentDidMount(){
-    //     axios.get(`/api/shelfie/bins?bins=${this.props.match.params.bins}`)
-    //     .then(res=>{
-    //         console.log(res.data)
-    //         this.setState({
-    //             bin1: res.data[0],
-    //             bin2: res.data[1],
-    //             bin3: res.data[2],
-    //             bin4: res.data[3],
-    //             bin5: res.data[4]
-    //         })
-    //     })
-    // }
+    componentDidMount(){
+        axios.get(`/api/shelfie/bins?bins=${this.props.match.params.bins}`)
+        .then(res=>{
+            console.log(res.data)
+            this.setState({
+                bin1: res.data[0],
+                bin2: res.data[1],
+                bin3: res.data[2],
+                bin4: res.data[3],
+                bin5: res.data[4]
+            })
+        })
+    }
 
     render(){
         return(

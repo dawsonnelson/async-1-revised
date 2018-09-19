@@ -1,0 +1,99 @@
+.big-container {
+    width: 100%;
+    height: calc(100% - 100px);
+    box-sizing: border-box;
+    display: flex;
+}
+
+.white {
+    width: 10%;
+    min-width: 120px;
+    height: 100%;
+}
+
+.content {
+    width: 90%;
+    padding: 25px 0;
+    height: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.right {
+    margin-left: 25px;
+    display: block;
+}
+
+.data {
+    min-width: 526px;
+    min-height: 194px;
+    display: block;
+}
+
+.button-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit {
+    font-weight: 700;
+    font-family: Open Sans, sans-serif;
+    background-color: #d8d8d8;
+    height: auto;
+    font-size: 30px;
+    border: none;
+    width: 200px;
+    border-radius: 3px;
+    padding: 10px 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.delete {
+    font-weight: 700;
+    font-family: Open Sans, sans-serif;
+    background-color: #d8d8d8;
+    height: auto;
+    font-size: 30px;
+    border: none;
+    width: 200px;
+    border-radius: 3px;
+    padding: 10px 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.save {
+    font-weight: 700;
+    font-family: Open Sans, sans-serif;
+    background-color: #40f99b;
+    height: auto;
+    font-size: 30px;
+    border: none;
+    width: 200px;
+    border-radius: 3px;
+    padding: 10px 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.input-titles {
+    font-weight: 700;
+    font-family: Open Sans, sans-serif;
+    margin-top: 0;
+    margin-left: 10px;
+    display: block;
+}
+
+.edit-input {
+    font-weight: 700;
+    font-family: Open Sans, sans-serif;
+    border: 1px solid #ab2a19;
+    border-radius: 3px;
+    padding: 12px;
+    min-width: 500px;
+    width: auto;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,1 @@
+select * from items where shelf_id = $1
