@@ -58,11 +58,11 @@ app.put('/api/shelfie/editItem', (req, res)=>{
     })
 })
 
-app.delete('/api/shelfie/delteItem', (req,res)=>{
+app.delete('/api/shelfie/deleteItem', (req,res)=>{
     const db = req.app.get('db')
     db.remove_item([req.query.id])
     .then(resp=>{
-        console.log(resp)
+        res.status(200).send(resp)
     })
     .catch(console.log)
 })
