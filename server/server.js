@@ -37,9 +37,9 @@ app.get('/api/shelfie/getItem', (req,res)=>{
 })
 
 app.post('/api/shelfie/createItem', (req,res)=>{
-    let { id, name, price } = req.body
+    let { id, name, price, image } = req.body
     const db = req.app.get('db')
-    db.add_items([id, name, price, id[0]])
+    db.add_items([id, name, price, image, id[0]])
     .then(resp=>{
         res.status(200).send(resp)
     })

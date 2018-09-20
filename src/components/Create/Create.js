@@ -10,12 +10,13 @@ export default class CreateItem extends Component {
 
         this.state = {
             binName: null,
-            binPrice: null
+            binPrice: null,
+            binImage: null
         }
     }
 
     handleAddNameInput(){
-        axios.post('/api/shelfie/createItem', {id: this.props.match.params.bin, name: this.state.binName , price: this.state.binPrice})
+        axios.post('/api/shelfie/createItem', {id: this.props.match.params.bin, name: this.state.binName , price: this.state.binPrice, image: this.state.binImage})
         .then(res=>{
             this.props.history.push(`/bins/${this.props.match.params.bin[0]}`)
         })
@@ -27,9 +28,16 @@ export default class CreateItem extends Component {
         })
     }
 
+
     handleNameInput(amount){
         this.setState({
             binName: amount
+        })
+    }
+
+    handleImageInput(amount){
+        this.setState({
+            binImage: amount
         })
     }
 
@@ -43,8 +51,10 @@ export default class CreateItem extends Component {
                 <div className = 'container'>
                     <span className = 'container-title'> Name </span>
                     <input className = 'input-box' onChange = {(e)=>this.handleNameInput(e.target.value)}/>
-                    <span className = 'container-title' value = '$'> Price </span>
+                    <span className = 'container-title'> Price </span>
                     <input className = 'input-box' onChange = {(e)=> this.handlePriceInput(e.target.value)}/>
+                    <span className = 'container-title-image'> Image(address) </span>
+                    <input className = 'input-box' onChange = {(e)=> this.handleImageInput(e.target.value)}/>
                     <button className = 'add-in-button' onClick = {()=> this.handleAddNameInput()}> + Add to Inventory </button>
                 </div>
             </div>

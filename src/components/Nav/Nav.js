@@ -9,7 +9,7 @@ export default function Nav (props){
         case '/bins/A':
             return(
                 <div className = 'nav-box'>
-                    <div className = 'logo-box'>
+                    <div className = 'logo-box-shelf'>
                         <Link to ='/'><img className = 'logo-pic' src = {image} alt = 'logo'/></Link>
                     </div>
                     <div className = 'shelf-title-box'>
@@ -20,7 +20,7 @@ export default function Nav (props){
         case '/bins/B':
             return(
                 <div className = 'nav-box'>
-                    <div className = 'logo-box'>
+                    <div className = 'logo-box-shelf'>
                         <Link to ='/'><img className = 'logo-pic' src = {image} alt = 'logo'/></Link>
                     </div>
                     <div className = 'shelf-title-box'>
@@ -31,7 +31,7 @@ export default function Nav (props){
         case '/bins/C':
             return(
                 <div className = 'nav-box'>
-                    <div className = 'logo-box'>
+                    <div className = 'logo-box-shelf'>
                         <Link to ='/'><img className = 'logo-pic' src = {image} alt = 'logo'/></Link>
                     </div>
                     <div className = 'shelf-title-box'>
@@ -42,7 +42,7 @@ export default function Nav (props){
         case '/bins/D':
             return(
                 <div className = 'nav-box'>
-                    <div className = 'logo-box'>
+                    <div className = 'logo-box-shelf'>
                         <Link to ='/'><img className = 'logo-pic' src = {image} alt = 'logo'/></Link>
                     </div>
                     <div className = 'shelf-title-box'>

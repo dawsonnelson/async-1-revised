@@ -19,6 +19,17 @@
     font-size: 30px;
 }
 
+.container-title-image{
+    font-weight: 700;
+    font-family: Open Sans, sans-serif;
+    margin-top: 0;
+    margin-left: 120px;
+    margin-bottom: 3px;
+    position: relative;
+    left: -200px;
+    font-size: 30px;
+}
+
 .input-box {
     border: 4px solid #ab2a19;
     border-radius: 5px;

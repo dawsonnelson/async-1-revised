@@ -12,15 +12,22 @@
 } */
 
 .content {
-    width: 90%;
+    width: 70%;
     padding: 25px 0;
     height: 100%;
     display: flex;
     box-sizing: border-box;
 }
 
+/* .image-box{
+    width: 30%;
+    height: 20%;
+    display: flex;
+    box-sizing: border-box;
+} */
 .right {
-    margin-left: 25px;
+    margin-left: 50px;
+    margin-top: 10px;
     display: block;
 }
 
@@ -39,11 +46,11 @@
     font-weight: 700;
     font-family: Open Sans, sans-serif;
     background-color: #d8d8d8;
-    height: auto;
-    font-size: 30px;
+    height: 80px;
+    font-size: 45px;
     border: none;
-    width: 200px;
-    border-radius: 3px;
+    width: 300px;
+    border-radius: 12px;
     padding: 10px 0;
     cursor: pointer;
     outline: none;
@@ -53,11 +60,11 @@
     font-weight: 700;
     font-family: Open Sans, sans-serif;
     background-color: #d8d8d8;
-    height: auto;
-    font-size: 30px;
+    height: 80px;
+    font-size: 45px;
     border: none;
-    width: 200px;
-    border-radius: 3px;
+    width: 300px;
+    border-radius: 12px;
     padding: 10px 0;
     cursor: pointer;
     outline: none;
@@ -67,11 +74,11 @@
     font-weight: 700;
     font-family: Open Sans, sans-serif;
     background-color: #40f99b;
-    height: auto;
-    font-size: 30px;
+    height: 80;
+    font-size: 45px;
     border: none;
-    width: 200px;
-    border-radius: 3px;
+    width: 300px;
+    border-radius: 40px;
     padding: 10px 0;
     cursor: pointer;
     outline: none;
@@ -80,8 +87,10 @@
 .input-titles {
     font-weight: 700;
     font-family: Open Sans, sans-serif;
+    font-size: 25px;
     margin-top: 0;
     margin-left: 10px;
+    margin-bottom: 13px;
     display: block;
 }
 
@@ -92,8 +101,34 @@
     border-radius: 3px;
     padding: 12px;
     min-width: 500px;
-    width: auto;
-    font-size: 30px;
+    width: 800px;
+    height: 75px;
+    font-size: 50px;
     margin-top: 0;
     margin-bottom: 10px;
+    
+}
+
+.img-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    margin-left: 25px;
+    border: 3px solid #ab2a19;
+    /* min-width: 0px;
+    max-width: 400px;
+    width: 400px;
+    min-height: 0px;
+    max-height: 400px;
+    height: 400px; */
+}
+
+.picture{
+    width: auto;
+    min-width: 500px;
+    max-width: 500px;
+    min-height: 400px;
+    height: auto;
+    max-height: 800px;
 }

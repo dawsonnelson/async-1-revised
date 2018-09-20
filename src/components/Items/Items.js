@@ -19,7 +19,8 @@ export default class Items extends Component {
         .then(res=>{
             this.setState({
                 binName: res.data.bin_name,
-                binPrice: res.data.bin_price
+                binPrice: res.data.bin_price,
+                binImage: res.data.picture,
             })
         })
     }
@@ -43,6 +44,7 @@ export default class Items extends Component {
         })
     } 
 
+
     handleEdit2(){
         axios.put(`/api/shelfie/editItem?id=${this.props.match.params.item}`, {binName: this.state.binName, binPrice: this.state.binPrice} )
         this.setState({
@@ -65,6 +67,9 @@ export default class Items extends Component {
                 </div>
                 <div className = 'big-container'>
                 <div className = 'white'></div>
+                <div className = 'image-box'>
+                     <div className = 'img-display'><img className ='picture' src={this.state.binImage}></img></div> 
+                </div>
                     <div className = 'content'>   
                         <div className = 'right'>
                             <div className = 'data'>
