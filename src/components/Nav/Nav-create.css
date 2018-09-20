@@ -63,7 +63,8 @@
 
   .shelf-title-box {
     display: flex;
-    align-items: center;
+    align-items: left;
+    margin-left: 10px;
   }
 
   .shelf-title {
@@ -106,16 +107,18 @@
 
   .shelf-bin-box {
       background-color: #ffb8af;
-      color:black;
+      color: #ffb8af;
       width: 100%;
       display: flex;
       justify-content: left;
+      
   }
 
-  .shelf-bin-title {
+  .shelf-create-title {
       font-size: 50px;
-      margin-top: 21px;
-      margin-left: 25px;
+      /* margin-top: 21px; */
+      margin-left: 12.5px;
+      color:black;
   }
   
   /* a {

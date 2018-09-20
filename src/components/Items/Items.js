@@ -32,7 +32,6 @@ export default class Items extends Component {
     }
     
     handleNameInput(val){
-        console.log(val)
         this.setState({
             binName: val
         })

@@ -18,7 +18,7 @@ export default function NavBin (props){
                         <Link to = {`/bins/${param2}`}><span className = 'shelf-title'> Shelf {param2} </span></Link>
                     </div>
                     <div className = 'shelf-bin-box'>
-                        <span className = 'shelf-bin-title'> Add to Bin {param3} </span>
+                        <span className = 'shelf-create-title'> Add to Bin {param3} </span>
                     </div>
                 </div>
             )

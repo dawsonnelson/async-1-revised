@@ -9,7 +9,7 @@
 }
 
 .shelf-image {
-    width: 50px;
+    width: 70px;
 }
 
 .shelf-title-box {
@@ -30,7 +30,8 @@
 .shelf-title {
     font-weight: 700;
     font-family: Open Sans,sans-serif;
-    font-size: 30px;
+    font-size: 50px;
+    
 }
 
 .shelf-bin-box {
@@ -45,4 +46,10 @@
     font-size: 30px;
     
 
+}
+
+.shelf-bin-title{
+    color: white;
+    margin-left: 15px;
+    font-size: 50px;
 }
