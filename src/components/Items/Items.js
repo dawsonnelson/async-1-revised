@@ -68,7 +68,7 @@ export default class Items extends Component {
                 <div className = 'big-container'>
                 <div className = 'white'></div>
                 <div className = 'image-box'>
-                     <div className = 'img-display'><img className ='picture' src={this.state.binImage}></img></div> 
+                     <div className = 'img-display'><img className = 'picture' src={this.state.binImage}></img></div> 
                 </div>
                     <div className = 'content'>   
                         <div className = 'right'>

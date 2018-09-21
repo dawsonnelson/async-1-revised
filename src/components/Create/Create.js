@@ -51,8 +51,8 @@ export default class CreateItem extends Component {
                 <div className = 'container'>
                     <span className = 'container-title'> Name </span>
                     <input className = 'input-box' onChange = {(e)=>this.handleNameInput(e.target.value)}/>
-                    <span className = 'container-title'> Price </span>
-                    <input className = 'input-box' onChange = {(e)=> this.handlePriceInput(e.target.value)}/>
+                    <span className = 'container-title'> Price($) </span>
+                    <input placeholder ='0.00' className = 'input-box' onChange = {(e)=> this.handlePriceInput(e.target.value)}/>
                     <span className = 'container-title-image'> Image(address) </span>
                     <input className = 'input-box' onChange = {(e)=> this.handleImageInput(e.target.value)}/>
                     <button className = 'add-in-button' onClick = {()=> this.handleAddNameInput()}> + Add to Inventory </button>
