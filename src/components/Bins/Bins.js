@@ -21,6 +21,7 @@ export default class Bins extends Component {
         axios.get(`/api/shelfie/bins?bins=${this.props.match.params.bins}`)
         .then(res=>{
             console.log(res.data)
+            console.log()
             
             this.setState({
                 bin1: res.data[0],
@@ -34,6 +35,10 @@ export default class Bins extends Component {
         
     }
 
+    test(){
+        console.log(this.state.bin1.bin_id)
+    }
+
     
 
     render(){
@@ -43,20 +48,21 @@ export default class Bins extends Component {
                     <Nav url = {`/bins/${this.props.match.params.bins}`}/>
                 </div>
             <div className = 'shelves'>
+                {/* <button onClick = {()=> this.test()}>test</button> */}
                 {this.state.bin1 ? 
-                    <Link to = {`/bin/${this.props.match.params.bins}1`}><div className = 'individual-bin'> Bin 1 </div></Link> : 
+                    <Link to = {`/bin/${this.state.bin1.bin_id}`}><div className = 'individual-bin'> Bin 1 </div></Link> : 
                     <Link to = {`/create/${this.props.match.params.bins}1`}><div className = 'add-to-bin-button'> + Add Inventory </div></Link>}
                 {this.state.bin2 ? 
-                    <Link to = {`/bin/${this.props.match.params.bins}2`}><div className = 'individual-bin'> Bin 2 </div></Link> : 
+                    <Link to = {`/bin/${this.state.bin2.bin_id}`}><div className = 'individual-bin'> Bin 2 </div></Link> : 
                     <Link to = {`/create/${this.props.match.params.bins}2`}><div className = 'add-to-bin-button'> + Add Inventory </div></Link>}
                 {this.state.bin3 ? 
-                    <Link to = {`/bin/${this.props.match.params.bins}3`}><div className = 'individual-bin'> Bin 3 </div></Link> : 
+                    <Link to = {`/bin/${this.state.bin3.bin_id}`}><div className = 'individual-bin'> Bin 3 </div></Link> : 
                     <Link to = {`/create/${this.props.match.params.bins}3`}><div className = 'add-to-bin-button'> + Add Inventory </div></Link>}
                 {this.state.bin4 ? 
-                    <Link to = {`/bin/${this.props.match.params.bins}4`}><div className = 'individual-bin'> Bin 4 </div></Link> : 
+                    <Link to = {`/bin/${this.state.bin1.bin_id}`}><div className = 'individual-bin'> Bin 4 </div></Link> : 
                     <Link to = {`/create/${this.props.match.params.bins}4`}><div className = 'add-to-bin-button'> + Add Inventory </div></Link>}
                 {this.state.bin5 ? 
-                    <Link to = {`/bin/${this.props.match.params.bins}5`}><div className = 'individual-bin'> Bin 5 </div></Link> : 
+                    <Link to = {`/bin/${this.state.bin1.bin_id}`}><div className = 'individual-bin'> Bin 5 </div></Link> : 
                     <Link to = {`/create/${this.props.match.params.bins}5`}><div className = 'add-to-bin-button'> + Add Inventory </div></Link>}
             </div>
 
